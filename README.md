@@ -1,8 +1,38 @@
-# React + Vite
+# Projet 11 - Développer une application Web avec react et React Router
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-Currently, two official plugins are available:
+💻 [Github](https://github.com/ToxyhDev/OC-Dev_App_JS_React-P11-Kasa)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## ⏳ Timing
+
+**Date début :** 28/10/23
+
+**Date de fin :** 10/11/23
+
+## **Date de fin réel :**
+
+**Objectifs :**
+
+-
+-
+
+---
+
+## 📑 Etapes :
+
+- [x] \*\*Étape n° 1 :
+- [x] \*\*Étape n° 2 :
+- [x] \*\*Étape n° 3 :
+- [x] \*\*Étape n° 4 :
+- [x] \*\*Étape n° 5 :
+- [x] \*\*Étape n° 6 :
+- [x] \*\*Étape n° 7 :
+
+---
