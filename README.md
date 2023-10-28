@@ -6,7 +6,9 @@
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
-💻 [Repo Github](https://github.com/ToxyhDev/OC-Dev_App_JS_React-P11-Kasa)
+---
+
+##💻 [Repo Github](https://github.com/ToxyhDev/OC-Dev_App_JS_React-P11-Kasa)
 
 ---
 
@@ -16,7 +18,7 @@
 
 **Date de fin :** 10/11/23
 
-## **Date de fin réel :**
+### **Date de fin réel :**
 
 **Objectifs :**
 
@@ -25,12 +27,12 @@
 
 ## 📑 Etapes :
 
-- [x] \*\*Étape n° 1 :\*\*
-- [x] \*\*Étape n° 2 :\*\*
-- [x] \*\*Étape n° 3 :\*\*
-- [x] \*\*Étape n° 4 :\*\*
-- [x] \*\*Étape n° 5 :\*\*
-- [x] \*\*Étape n° 6 :\*\*
-- [x] \*\*Étape n° 7 :\*\*
+- [x] **Étape n° 1 :**
+- [x] **Étape n° 2 :**
+- [x] **Étape n° 3 :**
+- [x] **Étape n° 4 :**
+- [x] **Étape n° 5 :**
+- [x] **Étape n° 6 :**
+- [x] **Étape n° 7 :**
 
 ---
