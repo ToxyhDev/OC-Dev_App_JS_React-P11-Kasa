@@ -10,8 +10,6 @@
 
 ## 💻 [Repo Github](https://github.com/ToxyhDev/OC-Dev_App_JS_React-P11-Kasa)
 
----
-
 ## 🚀 Démarer le projet
 
 ```shell
