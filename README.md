@@ -14,8 +14,8 @@
 
 ## 🚀 Démarer le projet
 
-```powershell
-//Pour démarer Vite-React et Sass en même temps
+```shell
+# Pour démarer Vite-React et Sass en même temps
 npm run dev-client
 ```
 
