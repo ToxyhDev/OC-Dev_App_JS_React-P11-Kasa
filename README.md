@@ -12,6 +12,13 @@
 
 ---
 
+## 🚀 Démarer le projet
+
+```powershell
+//Pour démarer Vite-React et Sass en même temps
+npm run dev-client
+```
+
 ## ⏳ Timing
 
 **Date début :** 28/10/23
