@@ -60,11 +60,6 @@ h2,
 h3,
 .font-strong {
   font-family: "Montserrat", sans-serif !important;
-  margin: 0 !important;
-}
-
-p {
-  margin: 0 !important;
 }
 
 ul,
@@ -116,6 +111,7 @@ figure {
   gap: 2.69rem;
   width: 100%;
   box-sizing: border-box;
+  min-height: 90vh;
   padding: 45px 100px 100px 50px;
 }
 @media (max-width: 576px) {
@@ -163,10 +159,50 @@ input[type=search]::-webkit-search-results-decoration {
   }
 }
 
+.fontSize-paragraph {
+  font-size: 18px;
+}
+@media (max-width: 576px) {
+  .fontSize-paragraph {
+    font-size: 14px;
+  }
+}
+
 .main-home {
   display: flex;
   flex-direction: column;
   gap: 2.69rem;
+}
+
+.main-errorPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 65vh;
+  height: 329px;
+  color: #ff6060;
+}
+
+.errorPage__title {
+  font-size: 288px;
+  font-weight: 700;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .errorPage__title {
+    font-size: 150px;
+  }
+}
+@media (max-width: 576px) {
+  .errorPage__title {
+    font-size: 96px;
+  }
+}
+.errorPage__msg {
+  margin: auto;
+}
+.errorPage__link {
+  text-decoration: underline;
 }
 
 .header-main {

@@ -40,11 +40,8 @@ h2,
 h3,
 .font-strong {
   font-family: 'Montserrat', sans-serif !important;
-  margin: 0 !important;
 }
-p {
-  margin: 0 !important;
-}
+
 ul,
 ol {
   padding: 0 !important;
@@ -90,6 +87,8 @@ figure {
   gap: 2.69rem;
   width: 100%;
   box-sizing: border-box;
+  min-height: 90vh;
+
   // border: 1px solid red;
   padding: 45px 100px 100px 50px;
   @include sm {
