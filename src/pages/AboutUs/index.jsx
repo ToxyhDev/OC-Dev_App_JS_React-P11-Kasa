@@ -1,7 +1,9 @@
+import Banner from '../../components/Banner'
+
 export default function AboutUs() {
   return (
     <>
-      <p>A propos page</p>
+      <Banner typeImg={'aboutus'} />
     </>
   )
 }

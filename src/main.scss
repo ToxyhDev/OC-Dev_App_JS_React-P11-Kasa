@@ -1,7 +1,18 @@
-@import './index.scss';
 @import './sass/utils/variables.scss';
 @import './sass/utils/mixins.scss';
 @import './sass/utils/placeholders';
 @import './sass/utils/keyframes.scss';
 @import './sass/base/base.scss';
 @import './sass/base/typographies';
+
+@import './pages/Home/index';
+@import './pages/AboutUs/index';
+@import './pages/Apartments/index';
+@import './pages/Error/index';
+
+@import './components/Header/index';
+@import './components/Navigation/index';
+@import './components/Footer/index';
+@import './components/Banner/index';
+@import './components/Card/index';
+@import './components/Cards/index';
