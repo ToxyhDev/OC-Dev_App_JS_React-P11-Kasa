@@ -30,7 +30,12 @@ export default function AboutUs() {
         <Banner typeImg={'aboutus'} />
         <div className="dropdown-container">
           {dropdownsData.map((data, index) => (
-            <Dropdown key={index} title={data.title} content={data.content} />
+            <Dropdown
+              key={index}
+              title={data.title}
+              content={data.content}
+              customKey={index}
+            />
           ))}
         </div>
       </main>

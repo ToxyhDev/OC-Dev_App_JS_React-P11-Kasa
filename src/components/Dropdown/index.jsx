@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 
-export default function Dropdown({ title, content, key }) {
+export default function Dropdown({ customKey, title, content }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleDropdown = () => {
@@ -15,18 +15,17 @@ export default function Dropdown({ title, content, key }) {
           className="dropdown__title"
           role="combobox"
           onClick={toggleDropdown}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              toggleDropdown()
-            }
-          }}
           aria-expanded={isOpen}
           aria-haspopup="listbox"
-          aria-controls={`dropdown__content${key}`}
+          aria-controls={`dropdown__content${customKey}`}
         >
           {title}
+          <span
+            className={`dropdown__title--arrow ${isOpen ? 'open' : ''}`}
+          ></span>
         </button>
-        <DropdownContent content={content} state={isOpen} index={key} />
+
+        <DropdownContent content={content} state={isOpen} index={customKey} />
       </div>
     </>
   )
@@ -62,11 +61,11 @@ function DropdownContent({ content, state, index }) {
 Dropdown.propTypes = {
   title: PropTypes.string,
   content: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  key: PropTypes.string.isRequired,
+  customKey: PropTypes.number.isRequired,
 }
 
 DropdownContent.propTypes = {
   content: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   state: PropTypes.bool.isRequired,
-  index: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
 }
