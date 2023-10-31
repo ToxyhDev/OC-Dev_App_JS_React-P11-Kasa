@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 
 export default function ErrorPage() {
   let error = useRouteError()
-
+  // console.log(error)
   return (
     <>
       <div className="body-container">
