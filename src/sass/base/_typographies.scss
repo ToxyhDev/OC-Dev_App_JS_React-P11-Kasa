@@ -20,3 +20,10 @@
     font-size: $fontSize-paragraph-sm;
   }
 }
+
+.fontSize-paragraph2 {
+  font-size: $fontSize-paragraph2;
+  @include sm {
+    font-size: $fontSize-paragraph2-sm;
+  }
+}

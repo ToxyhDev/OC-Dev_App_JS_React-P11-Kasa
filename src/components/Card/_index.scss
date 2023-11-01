@@ -15,9 +15,15 @@
     flex: 1 0 100%;
   }
 
-  &__img {
+  &__article {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
     object-fit: cover;
   }
 
@@ -29,6 +35,7 @@
     content: '';
 
     bottom: 0;
+    left: 0;
   }
 
   &::before {

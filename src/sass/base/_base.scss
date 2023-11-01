@@ -44,8 +44,8 @@ h3,
 
 ul,
 ol {
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0;
+  margin: 0;
 }
 li {
   list-style: none;
@@ -90,7 +90,7 @@ figure {
   min-height: 90vh;
 
   // border: 1px solid red;
-  padding: 45px 100px 100px 50px;
+  padding: 45px 100px 50px 100px;
   @include sm {
     padding: 20px;
   }

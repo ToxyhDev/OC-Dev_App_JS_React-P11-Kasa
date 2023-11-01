@@ -7,6 +7,9 @@
   display: flex;
   align-items: center;
   gap: 3.56rem;
+  @include sm {
+    gap: 1.62rem;
+  }
 
   &__element {
     display: flex;

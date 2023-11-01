@@ -46,7 +46,10 @@ function DropdownContent({ content, state, index }) {
   } else if (Array.isArray(content)) {
     return (
       <>
-        <ul id={`dropdown__content${index}`} className="dropdown__content">
+        <ul
+          id={`dropdown__content${index}`}
+          className={`dropdown__content ${state ? 'open' : ''}`}
+        >
           {content.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
