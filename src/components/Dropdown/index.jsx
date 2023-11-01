@@ -10,7 +10,7 @@ export default function Dropdown({ customKey, title, content }) {
 
   return (
     <>
-      <div className="dropdown">
+      <li className="dropdown">
         <button
           className="dropdown__title"
           role="combobox"
@@ -26,7 +26,7 @@ export default function Dropdown({ customKey, title, content }) {
         </button>
 
         <DropdownContent content={content} state={isOpen} index={customKey} />
-      </div>
+      </li>
     </>
   )
 }

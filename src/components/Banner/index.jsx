@@ -12,9 +12,9 @@ export default function Banner({ typeImg, text }) {
   }
   return (
     <>
-      <div className={`banner ${classImg}`}>
+      <header className={`banner ${classImg}`}>
         {text ? <p className="banner__text">{text}</p> : ''}
-      </div>
+      </header>
     </>
   )
 }

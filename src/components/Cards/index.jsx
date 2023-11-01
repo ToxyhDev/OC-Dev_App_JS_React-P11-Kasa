@@ -5,7 +5,7 @@ export default function Cards() {
   // console.log(data)
   return (
     <>
-      <div className="cards-section">
+      <ul className="cards-section">
         {data.map((element, index) => (
           <Card
             key={index}
@@ -14,7 +14,7 @@ export default function Cards() {
             img={element.cover}
           />
         ))}
-      </div>
+      </ul>
     </>
   )
 }

@@ -36,7 +36,8 @@ export default function Carousel({ images, classImg }) {
 
   return (
     <>
-      <div className="carousel" onKeyDown={handleKeyDown} tabIndex="0">
+      <figure className="carousel" onKeyDown={handleKeyDown} tabIndex="0">
+        <figcaption className="sr-only">Galerie image du logement</figcaption>
         <button
           className="carousel__btn carousel__btn--prev"
           onClick={() => prevImg()}
@@ -49,11 +50,15 @@ export default function Carousel({ images, classImg }) {
         >
           <span className="sr-only">Image suivante</span>
         </button>
-        <img className={classImg} src={images[numeroImg]} alt="" />
+        <img
+          className={classImg}
+          src={images[numeroImg]}
+          alt={`Image ${numeroImg} du caroussel`}
+        />
         <span className="carousel__index">{`${numeroImg + 1}/${
           totalImg + 1
         }`}</span>
-      </div>
+      </figure>
     </>
   )
 }

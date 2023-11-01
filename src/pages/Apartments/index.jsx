@@ -39,7 +39,7 @@ export default function Apartments() {
                 classImg={'apartment__img'}
               />
             )}
-            <div className="apartment__header">
+            <header className="apartment__header">
               <section className="apartment__announce">
                 <h2 className="apartment__title fontSize-title">
                   {apartment.title}
@@ -56,7 +56,7 @@ export default function Apartments() {
                 </ul>
               </section>
               <div className="apartment__profil">
-                <section className="apartment__user">
+                <div className="apartment__user">
                   <h3 className="apartment__name fontSize-paragraph2">
                     {apartment.host.name}
                   </h3>
@@ -65,7 +65,7 @@ export default function Apartments() {
                     src={apartment.host.picture}
                     alt={`Photo de ${apartment.host.name}`}
                   />
-                </section>
+                </div>
                 <ul className="apartment__rates">
                   {Array(5)
                     .fill(null)
@@ -84,8 +84,8 @@ export default function Apartments() {
                     ))}
                 </ul>
               </div>
-            </div>
-            <div className="apartment__dropdowns">
+            </header>
+            <ul className="apartment__dropdowns">
               <Dropdown
                 customKey={0}
                 title={'Description'}
@@ -96,7 +96,7 @@ export default function Apartments() {
                 title={'Équipements'}
                 content={apartment.equipments}
               />
-            </div>
+            </ul>
           </article>
         </main>
       )}

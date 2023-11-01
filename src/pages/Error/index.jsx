@@ -14,28 +14,28 @@ export default function ErrorPage() {
           {error && isRouteErrorResponse(error) ? (
             <>
               {error.status === 404 && (
-                <div className="errorPage__msg fontSize-title">
+                <p className="errorPage__msg fontSize-title">
                   Oups! La page que vous demandez n&apos;existe pas.
-                </div>
+                </p>
               )}
               {error.status === 401 && (
-                <div className="errorPage__msg fontSize-title">
+                <p className="errorPage__msg fontSize-title">
                   Oups! Vous n&apos;êtes pas autorisés à voir ça.
-                </div>
+                </p>
               )}
               {error.status === 503 && (
-                <div className="errorPage__msg fontSize-title">
+                <p className="errorPage__msg fontSize-title">
                   Oups! On dirait que notre API est en panne
-                </div>
+                </p>
               )}
               {error.status === 418 && (
-                <div className="errorPage__msg fontSize-title">🫖</div>
+                <p className="errorPage__msg fontSize-title">🫖</p>
               )}
             </>
           ) : (
-            <div className="errorPage__msg fontSize-title">
+            <p className="errorPage__msg fontSize-title">
               Oups! Quelque chose s&apos;est mal passé
-            </div>
+            </p>
           )}
           <Link className="errorPage__link fontSize-paragraph" to="/accueil">
             Retourner sur la page d&apos;accueil

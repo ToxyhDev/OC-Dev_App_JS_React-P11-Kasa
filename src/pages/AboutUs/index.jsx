@@ -28,7 +28,7 @@ export default function AboutUs() {
     <>
       <main className="main-aboutus">
         <Banner typeImg={'aboutus'} />
-        <div className="dropdown-container">
+        <ul className="dropdown-container">
           {dropdownsData.map((data, index) => (
             <Dropdown
               key={index}
@@ -37,7 +37,7 @@ export default function AboutUs() {
               customKey={index}
             />
           ))}
-        </div>
+        </ul>
       </main>
     </>
   )
