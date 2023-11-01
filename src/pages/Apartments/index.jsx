@@ -4,6 +4,7 @@ import data from '../../data/apartments.json'
 import { useEffect, useState } from 'react'
 import Dropdown from '../../components/Dropdown'
 import { ReactComponent as Star } from '../../assets/star-icon.svg'
+import Carousel from '../../components/Carousel'
 
 export default function Apartments() {
   const { id } = useParams()
@@ -15,7 +16,6 @@ export default function Apartments() {
     if (checked === undefined) {
       navigate('/erreur-logement')
     } else {
-      console.log(checked)
       setApartment(checked)
     }
   }, [id, navigate])
@@ -23,11 +23,22 @@ export default function Apartments() {
   return (
     <>
       {apartment === null ? (
-        <p>Chargement en cours {console.log('test')}</p>
+        <p>{'Chargement en cours'}</p>
       ) : (
         <main className="apartment-main">
           <article className="apartment">
-            <p>BANNIERE</p>
+            {apartment.pictures.length === 1 ? (
+              <img
+                className="apartment__img"
+                src={apartment.pictures[0]}
+                alt={`Photo du logement de ${apartment.host.name}`}
+              />
+            ) : (
+              <Carousel
+                images={apartment.pictures}
+                classImg={'apartment__img'}
+              />
+            )}
             <div className="apartment__header">
               <section className="apartment__announce">
                 <h2 className="apartment__title fontSize-title">
