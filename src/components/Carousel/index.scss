@@ -19,12 +19,12 @@
 
     &--prev {
       left: 0;
-      background-image: url(../../../src/assets/arrowLeft-icon.svg);
+      background-image: url(../../assets/arrowLeft-icon.svg);
     }
     &--next {
       position: absolute;
       right: 0;
-      background-image: url(../../../src/assets/arrowRight-icon.svg);
+      background-image: url(../../assets/arrowRight-icon.svg);
     }
   }
   &__index {

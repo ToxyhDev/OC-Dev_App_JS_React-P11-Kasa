@@ -1,3 +1,4 @@
+import './index.scss'
 import PropTypes from 'prop-types'
 
 export default function Banner({ typeImg, text }) {
@@ -10,6 +11,7 @@ export default function Banner({ typeImg, text }) {
       classImg = 'banner__bg2'
       break
   }
+
   return (
     <>
       <header className={`banner ${classImg}`}>

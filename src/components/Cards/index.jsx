@@ -1,3 +1,4 @@
+import './index.scss'
 import data from '../../data/apartments.json'
 import Card from '../Card'
 

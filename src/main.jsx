@@ -9,6 +9,7 @@ import Apartments from './pages/Apartments'
 
 const router = createBrowserRouter([
   {
+    // basename: '/projets/11-kasa', // semble ne pas être pris en compte
     path: '/',
     element: <Root />,
     errorElement: <ErrorPage />,

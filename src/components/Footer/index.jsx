@@ -1,3 +1,4 @@
+import './index.scss'
 import { ReactComponent as Logo } from '../../assets/logo-secondary.svg'
 
 export default function Footer() {

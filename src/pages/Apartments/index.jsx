@@ -1,3 +1,4 @@
+import './index.scss'
 import { useNavigate, useParams } from 'react-router-dom'
 
 import data from '../../data/apartments.json'

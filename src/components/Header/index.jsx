@@ -1,3 +1,4 @@
+import './index.scss'
 import { ReactComponent as Logo } from '../../assets/logo-primary.svg'
 import Navigation from '../Navigation'
 

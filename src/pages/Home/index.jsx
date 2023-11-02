@@ -1,5 +1,6 @@
 import Banner from '../../components/Banner'
 import Cards from '../../components/Cards'
+import './index.scss'
 
 const textBanner = 'Chez vous, partout et ailleurs'
 
