@@ -25,7 +25,7 @@ Utilisation de @svgr/rollup pour la gestion des SVG. [Link npm](https://www.npmj
 
 **Date de fin :** 10/11/23
 
-### **Date de fin réel : 01/11/23**
+### **Date de fin réel : 03/11/23**
 
 ## 🎯 Objectifs :
 
