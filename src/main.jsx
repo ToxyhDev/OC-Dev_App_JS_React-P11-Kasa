@@ -7,30 +7,34 @@ import AboutUs from './pages/AboutUs'
 import ErrorPage from './pages/Error'
 import Apartments from './pages/Apartments'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Root />,
+      errorElement: <ErrorPage />,
+      children: [
+        // -> Chemin si path = /
+        { index: true, element: <Home /> },
+        {
+          path: 'accueil',
+          element: <Home />,
+        },
+        {
+          path: 'aPropos',
+          element: <AboutUs />,
+        },
+        {
+          path: 'logement/:id',
+          element: <Apartments />,
+        },
+      ],
+    },
+  ],
   {
-    // basename: '/projets/11-kasa', // semble ne pas être pris en compte
-    path: '/',
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      // -> Chemin si path = /
-      { index: true, element: <Home /> },
-      {
-        path: 'accueil',
-        element: <Home />,
-      },
-      {
-        path: 'aPropos',
-        element: <AboutUs />,
-      },
-      {
-        path: 'logement/:id',
-        element: <Apartments />,
-      },
-    ],
-  },
-])
+    basename: '/projets/11-kasa',
+  }
+)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
