@@ -38,7 +38,7 @@ export default function ErrorPage() {
               Oups! Quelque chose s&apos;est mal passé
             </p>
           )}
-          <Link className="errorPage__link fontSize-paragraph" to="/accueil">
+          <Link className="errorPage__link fontSize-paragraph" to="/">
             Retourner sur la page d&apos;accueil
           </Link>
         </main>
