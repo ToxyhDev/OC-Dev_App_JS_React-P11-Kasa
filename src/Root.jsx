@@ -1,12 +1,18 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, ScrollRestoration } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import ScrollToTop from './components/ScrollToTop'
 
 export default function Root() {
   return (
     <>
-      <ScrollToTop />
+      <ScrollRestoration
+        getKey={(location) => {
+          const paths = ['/']
+          return paths.includes(location.pathname)
+            ? location.pathname
+            : location.key
+        }}
+      />
       <div className="body-container">
         <Header></Header>
         <Outlet />

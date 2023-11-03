@@ -14,10 +14,8 @@ const router = createBrowserRouter(
       element: <Root />,
       errorElement: <ErrorPage />,
       children: [
-        // -> Chemin si path = /
-        { index: true, element: <Home /> },
         {
-          path: 'accueil',
+          index: true,
           element: <Home />,
         },
         {

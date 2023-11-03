@@ -7,7 +7,7 @@ export default function Navigation() {
       <nav className="nav-container">
         <ul className="navMain">
           <li className="navMain__element">
-            <NavLink to="/accueil" className={'fontSize-subtitle'}>
+            <NavLink to="/" className={'fontSize-subtitle'}>
               Accueil
             </NavLink>
           </li>
