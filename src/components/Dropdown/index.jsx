@@ -2,7 +2,7 @@ import './index.scss'
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 
-export default function Dropdown({ customKey, title, content }) {
+export default function Dropdown({ customKey, title, children }) {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleDropdown = () => {
@@ -26,50 +26,14 @@ export default function Dropdown({ customKey, title, content }) {
           ></span>
         </button>
 
-        <DropdownContent content={content} state={isOpen} index={customKey} />
+        {children({ isOpen, customKey })}
       </li>
     </>
   )
 }
 
-function DropdownContent({ content, state, index }) {
-  if (typeof content === 'string') {
-    return (
-      <>
-        <div
-          id={`dropdown__content${index}`}
-          className={`dropdown__content ${state ? 'open' : ''}`}
-        >
-          <p>{content}</p>
-        </div>
-      </>
-    )
-  } else if (Array.isArray(content)) {
-    return (
-      <>
-        <ul
-          id={`dropdown__content${index}`}
-          className={`dropdown__content ${state ? 'open' : ''}`}
-        >
-          {content.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </>
-    )
-  } else {
-    throw new Error('Contenu du Dropdown non pris en charge')
-  }
-}
-
 Dropdown.propTypes = {
   title: PropTypes.string,
-  content: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
   customKey: PropTypes.number.isRequired,
-}
-
-DropdownContent.propTypes = {
-  content: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
-  state: PropTypes.bool.isRequired,
-  index: PropTypes.number.isRequired,
+  children: PropTypes.func,
 }

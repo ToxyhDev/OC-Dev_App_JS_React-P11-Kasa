@@ -36,7 +36,16 @@ export default function AboutUs() {
               title={data.title}
               content={data.content}
               customKey={index}
-            />
+            >
+              {({ isOpen, customKey }) => (
+                <div
+                  id={`dropdown__content${customKey}`}
+                  className={`dropdown__content ${isOpen ? 'open' : ''}`}
+                >
+                  <p>{data.content}</p>
+                </div>
+              )}
+            </Dropdown>
           ))}
         </ul>
       </main>

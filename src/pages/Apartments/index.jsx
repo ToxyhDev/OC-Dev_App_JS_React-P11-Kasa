@@ -87,16 +87,28 @@ export default function Apartments() {
               </div>
             </header>
             <ul className="apartment__dropdowns">
-              <Dropdown
-                customKey={0}
-                title={'Description'}
-                content={apartment.description}
-              />
-              <Dropdown
-                customKey={1}
-                title={'Équipements'}
-                content={apartment.equipments}
-              />
+              <Dropdown customKey={0} title={'Description'}>
+                {({ isOpen, customKey }) => (
+                  <div
+                    id={`dropdown__content${customKey}`}
+                    className={`dropdown__content ${isOpen ? 'open' : ''}`}
+                  >
+                    <p>{apartment.description}</p>
+                  </div>
+                )}
+              </Dropdown>
+              <Dropdown customKey={1} title={'Équipements'}>
+                {({ isOpen, customKey }) => (
+                  <ul
+                    id={`dropdown__content${customKey}`}
+                    className={`dropdown__content ${isOpen ? 'open' : ''}`}
+                  >
+                    {apartment.equipments.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+              </Dropdown>
             </ul>
           </article>
         </main>
